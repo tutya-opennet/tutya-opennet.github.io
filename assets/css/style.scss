@@ -3,6 +3,11 @@
 
 @import "jekyll-theme-primer";
 
+body {
+    direction: rtl !important;
+    text-align: right;
+}
+
 div#indexicons {
 	margin-top: 2.5em;
 	margin-bottom: 2em;

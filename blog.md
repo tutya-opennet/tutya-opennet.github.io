@@ -1,0 +1,23 @@
+---
+sitemap: true
+logo: iconoir/post.svg
+---
+
+# وبلاگ
+
+می‌توانید با استفاده از RSS در وبلاگ ما مشترک شوید [using RSS](https://yggdrasil-network.github.io/feed.xml).
+
+{% for post in site.posts %}
+	{% if post.unlisted != true %}
+	<div class='blogpost'>
+		<div id='date'>
+			<div id='day'>{{ post.date | date: "%-d" }}</div>
+			<div id='month'>{{ post.date | date: "%B %Y" }}</div>
+		</div>
+		<div id='overview'>
+			<div id='title'><a href="{{ post.url }}">{{ post.title }}</a></div>
+			<div id='excerpt'>{{ post.excerpt | strip_html }}</div>
+		</div>
+	</div>
+	{% endif %}
+{% endfor %}

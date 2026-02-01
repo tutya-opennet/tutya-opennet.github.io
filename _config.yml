@@ -1,3 +1,19 @@
-theme: jekyll-theme-minimal
+name: Tutya-Opennet
 title: Tutya Opennet Project
-description: p2p decenteralized network with Tutya Opennet
+description: >
+  p2p decenteralized network with Tutya Opennet to connect worlds
+
+theme: jekyll-theme-primer
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+defaults:
+  -
+    scope:
+      path:            "_posts/*.md"
+    values:
+      sitemap:         true
